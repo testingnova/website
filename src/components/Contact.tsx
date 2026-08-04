@@ -48,7 +48,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 text-lg">Call Us</h4>
-                  <a href="tel:+918805089851" className="text-slate-600 hover:text-brand-600 transition-colors">+91 8805089851</a>
+                  <a href="tel:+918369914680" className="text-slate-600 hover:text-brand-600 transition-colors">+91 8369914680</a>
                 </div>
               </div>
                <div className="flex items-start gap-4">
@@ -57,7 +57,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 text-lg">WhatsApp</h4>
-                  <a href="https://wa.me/918805089851" target="_blank" rel="noreferrer" className="text-slate-600 hover:text-[#25D366] transition-colors">Message us on WhatsApp</a>
+                  <a href="https://wa.me/918369914680" target="_blank" rel="noreferrer" className="text-slate-600 hover:text-[#25D366] transition-colors">Message us on WhatsApp</a>
                 </div>
               </div>
             </div>

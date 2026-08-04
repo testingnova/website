@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { CheckCircle2, ChevronRight } from "lucide-react";
+import { CheckCircle2, ChevronRight, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
@@ -49,6 +49,13 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
+            <a
+              href="#free-audit"
+              className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-brand-500 to-accent-500 text-white font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 group shadow-lg shadow-brand-500/25"
+            >
+              <Sparkles className="w-4 h-4" />
+              Get Free QA Audit
+            </a>
             <a
               href="#contact"
               className="w-full sm:w-auto px-8 py-4 rounded-lg bg-brand-600 text-white font-medium hover:bg-brand-900 transition-colors flex items-center justify-center gap-2 group"

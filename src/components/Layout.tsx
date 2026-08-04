@@ -12,6 +12,9 @@ export function Header() {
         <nav className="hidden md:flex items-center gap-8">
           <a href="#about" className="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">About</a>
           <a href="#services" className="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Services</a>
+          <a href="#industries" className="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Industries</a>
+          <a href="#pricing" className="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Pricing</a>
+          <a href="#free-audit" className="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Free Audit</a>
           <a href="#contact" className="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Contact</a>
         </nav>
 
@@ -42,6 +45,10 @@ export function Footer() {
             <p className="max-w-sm text-sm leading-relaxed mb-6">
               We provide top-quality, reliable software testing solutions to businesses of all sizes that improve user experience and reduce production defects.
             </p>
+            <div className="space-y-1.5 text-sm">
+              <p><a href="tel:+918369914680" className="hover:text-brand-400 transition-colors">+91 8369914680</a></p>
+              <p><a href="mailto:info@testingnova.com" className="hover:text-brand-400 transition-colors">info@testingnova.com</a></p>
+            </div>
           </div>
           
           <div>
@@ -49,6 +56,9 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="#about" className="hover:text-brand-400 transition-colors">About Us</a></li>
               <li><a href="#services" className="hover:text-brand-400 transition-colors">Services</a></li>
+              <li><a href="#industries" className="hover:text-brand-400 transition-colors">Industries</a></li>
+              <li><a href="#pricing" className="hover:text-brand-400 transition-colors">Pricing</a></li>
+              <li><a href="#free-audit" className="hover:text-brand-400 transition-colors">Free Audit</a></li>
               <li><a href="#contact" className="hover:text-brand-400 transition-colors">Contact</a></li>
             </ul>
           </div>
