@@ -46,7 +46,6 @@ export function Footer() {
               We provide top-quality, reliable software testing solutions to businesses of all sizes that improve user experience and reduce production defects.
             </p>
             <div className="space-y-1.5 text-sm">
-              <p><a href="tel:+918369914680" className="hover:text-brand-400 transition-colors">+91 8369914680</a></p>
               <p><a href="mailto:info@testingnova.com" className="hover:text-brand-400 transition-colors">info@testingnova.com</a></p>
             </div>
           </div>

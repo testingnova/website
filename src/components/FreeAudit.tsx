@@ -114,12 +114,6 @@ export function FreeAudit() {
                 >
                   Request Free Audit
                 </a>
-                <a
-                  href="tel:+918369914680"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white/10 text-white font-medium border border-white/15 hover:bg-white/15 transition-colors"
-                >
-                  Call +91 8369914680
-                </a>
               </div>
             </div>
 

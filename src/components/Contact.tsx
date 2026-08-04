@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Mail, Phone, MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Contact() {
   const today = new Date().getDay();
@@ -40,24 +40,6 @@ export function Contact() {
                 <div>
                   <h4 className="font-semibold text-slate-900 text-lg">Email Us</h4>
                   <a href="mailto:info@testingnova.com" className="text-slate-600 hover:text-brand-600 transition-colors">info@testingnova.com</a>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-brand-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-slate-900 text-lg">Call Us</h4>
-                  <a href="tel:+918369914680" className="text-slate-600 hover:text-brand-600 transition-colors">+91 8369914680</a>
-                </div>
-              </div>
-               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#25D366]/10 shadow-sm flex items-center justify-center shrink-0">
-                  <MessageCircle className="w-5 h-5 text-[#25D366]" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-slate-900 text-lg">WhatsApp</h4>
-                  <a href="https://wa.me/918369914680" target="_blank" rel="noreferrer" className="text-slate-600 hover:text-[#25D366] transition-colors">Message us on WhatsApp</a>
                 </div>
               </div>
             </div>
