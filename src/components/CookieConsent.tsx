@@ -10,21 +10,36 @@ declare global {
   }
 }
 
-function loadGoogleAnalytics() {
+function ensureGtagScript() {
   if (document.getElementById("ga-gtag-script")) return;
-
   const script = document.createElement("script");
   script.id = "ga-gtag-script";
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
   document.head.appendChild(script);
+}
 
+function gtag(...args: unknown[]) {
   window.dataLayer = window.dataLayer || [];
-  function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
-  }
+  window.dataLayer.push(args);
+}
+
+// Full tracking: sets the standard GA client-id cookie, persists across visits.
+function loadGoogleAnalytics() {
+  ensureGtagScript();
   gtag("js", new Date());
   gtag("config", GA_MEASUREMENT_ID);
+  gtag("event", "cookie_consent", { consent_choice: "accepted" });
+}
+
+// Cookieless ping: counts a decline without setting any cookie or persistent
+// client ID (client_storage: "none"), so it can't be linked to this visitor
+// on a future visit — it only increments an aggregate "declined" count.
+function pingDecline() {
+  ensureGtagScript();
+  gtag("js", new Date());
+  gtag("config", GA_MEASUREMENT_ID, { client_storage: "none", send_page_view: false });
+  gtag("event", "cookie_consent", { consent_choice: "declined" });
 }
 
 export function CookieConsent() {
@@ -47,6 +62,7 @@ export function CookieConsent() {
 
   const handleDecline = () => {
     localStorage.setItem(CONSENT_KEY, "denied");
+    pingDecline();
     setVisible(false);
   };
 
