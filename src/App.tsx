@@ -11,6 +11,7 @@ import { Pricing } from '@/src/components/Pricing';
 import { FreeAudit } from '@/src/components/FreeAudit';
 import { WhyUs } from '@/src/components/WhyUs';
 import { Contact } from '@/src/components/Contact';
+import { CookieConsent } from '@/src/components/CookieConsent';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 }
